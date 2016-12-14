@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\Quarotor\Source\UP_con\ANO_RC_v11\app\src\main\assets\lib\android_api_1.1_forsdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="610ab8a4952cfec5cc008a697790e21dec7b8d3a">
+        <dex dex="F:\Quarotor\Source\UP_con\ANO_RC_v11\app\build\intermediates\pre-dexed\debug\android_api_1.1_forsdk-987532d4f41b083c13d1fa1782862c5b1428dc87.jar" />
+    </item>
+    <item
+        jar="F:\Quarotor\Source\UP_con\ANO_RC_v11\app\src\main\assets\lib\galaxy_mini.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="58de9ecfba229dbb2c3eb3f45dbe284ba58100ea">
+        <dex dex="F:\Quarotor\Source\UP_con\ANO_RC_v11\app\build\intermediates\pre-dexed\debug\galaxy_mini-d8ba37f0804d3127f7195454e112bbd14b4f590b.jar" />
+    </item>
+    <item
+        jar="C:\Users\user\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="F:\Quarotor\Source\UP_con\ANO_RC_v11\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-3c9634e73870f3270eed8634a922b954d7502e55.jar" />
+    </item>
+    <item
+        jar="F:\Quarotor\Source\UP_con\ANO_RC_v11\app\src\main\assets\lib\achartengine-1.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b2bb0af9f390c0edd4d7d95f613f38da3abe0144">
+        <dex dex="F:\Quarotor\Source\UP_con\ANO_RC_v11\app\build\intermediates\pre-dexed\debug\achartengine-1.0.0-da736bb3b3924d39db5f9c72a76969b19205ed74.jar" />
+    </item>
+    <item
+        jar="F:\Quarotor\Source\UP_con\ANO_RC_v11\app\src\main\assets\lib\BaiduLBS_Android.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ed218ea63a8434b955e6e9d6e7a8e88f0125e46d">
+        <dex dex="F:\Quarotor\Source\UP_con\ANO_RC_v11\app\build\intermediates\pre-dexed\debug\BaiduLBS_Android-2cf9aaae4a09b76f4dfad81ad2bb69225f8c88b9.jar" />
+    </item>
+
+</items>

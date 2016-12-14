@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha
+    android:fromAlpha="1"
+    android:toAlpha="0"
+    android:fillAfter="false"
+    android:duration="500"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+</alpha><!-- From: file:/F:/Quarotor/Source/UP_con/ANO_RC_v11/app/src/main/res/anim/anim_jianbian.xml -->

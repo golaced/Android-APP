@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ano_rc.ano_rc_v1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="老邢上位机V1.0"
+        android:theme="@style/AppTheme" >
+        <!-- 添加开发密钥 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="******B8CqNUn33q56GTjlHB" />
+        <activity
+            android:name=".MainActivity"
+            android:label="老邢上位机V1.0" android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>//添加新串口
+    	<activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="ActivityControl"></activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="ActivityGPS"></activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="ActivitySet"></activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="ActivityPID"></activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="ActivitySensor"></activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name=".debug2_main"></activity>
+        <activity android:name="ActivityBTDeviceList" android:theme="@android:style/Theme.Dialog"></activity>
+    </application>
+
+
+</manifest>

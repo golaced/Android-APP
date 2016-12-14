@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActivityGPS"
+    android:orientation="vertical"
+
+    >
+
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="STOP"
+        android:textColor="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_rol"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/limegreen"
+        android:layout_below="@+id/b_back_gps"
+        android:layout_alignLeft="@+id/b_back_gps"
+        android:layout_alignStart="@+id/b_back_gps" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_pit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/limegreen"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_yaw"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/limegreen"
+        android:layout_below="@+id/textView9"
+        android:layout_toLeftOf="@+id/text_val_pitg"
+        android:layout_toStartOf="@+id/text_val_pitg" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高度:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dodgerblue"
+        android:layout_below="@+id/textView10"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前纬度："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dodgerblue"
+        android:layout_alignTop="@+id/text_val_rolg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前经度："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dodgerblue"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/b_back_gps"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="返回"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="12.123"
+        android:id="@+id/text_val_rolg"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="12.123"
+        android:id="@+id/text_val_pitg"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignLeft="@+id/text_val_rolg"
+        android:layout_alignStart="@+id/text_val_rolg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="12.123"
+        android:id="@+id/text_val_yawg"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignLeft="@+id/text_val_pitg"
+        android:layout_alignStart="@+id/text_val_pitg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="12.123"
+        android:id="@+id/text_tv_highg"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="速度:"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="spd"
+        android:id="@+id/i_spd"
+        android:layout_below="@+id/text_tv_highg"
+        android:layout_alignLeft="@+id/text_tv_highg"
+        android:layout_alignStart="@+id/text_tv_highg" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS定位"
+        android:id="@+id/switch3"
+        android:layout_alignTop="@+id/b_back_gps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定高"
+        android:id="@+id/switch4"
+        android:layout_alignTop="@+id/switch3"
+        android:layout_toRightOf="@+id/switch3"
+        android:layout_toEndOf="@+id/switch3"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卫星数："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dodgerblue"
+        android:layout_alignTop="@+id/text_val_rolg"
+        android:layout_toRightOf="@+id/switch4"
+        android:layout_toEndOf="@+id/switch4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/text_svnum"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_toEndOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定位模式："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dodgerblue"
+        android:layout_above="@+id/textView"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/text_gpsmode"
+        android:layout_alignBottom="@+id/textView52"
+        android:layout_toRightOf="@+id/textView52"
+        android:layout_toEndOf="@+id/textView52" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/text_WEI"
+        android:layout_above="@+id/textView16"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/text_JIN"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignLeft="@+id/text_WEI"
+        android:layout_alignStart="@+id/text_WEI" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前X："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dodgerblue"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前Y："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dodgerblue"
+        android:layout_below="@+id/textView54"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UKF_Y:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dodgerblue"
+        android:layout_below="@+id/textView54"
+        android:layout_alignLeft="@+id/textView55"
+        android:layout_alignStart="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UKF_X:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dodgerblue"
+        android:layout_above="@+id/textView53"
+        android:layout_alignLeft="@+id/textView52"
+        android:layout_alignStart="@+id/textView52" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/text_x"
+        android:layout_above="@+id/textView56"
+        android:layout_toRightOf="@+id/textView54"
+        android:layout_toEndOf="@+id/textView54" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/text_y"
+        android:layout_alignBottom="@+id/textView56"
+        android:layout_toRightOf="@+id/textView54"
+        android:layout_toEndOf="@+id/textView54" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/text_ukfx"
+        android:layout_alignBottom="@+id/text_x"
+        android:layout_toRightOf="@+id/textView55"
+        android:layout_toEndOf="@+id/textView55" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/text_ukfy"
+        android:layout_alignBottom="@+id/text_y"
+        android:layout_toRightOf="@+id/textView53"
+        android:layout_toEndOf="@+id/textView53" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SD"
+        android:id="@+id/id_sw_sd"
+        android:checked="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

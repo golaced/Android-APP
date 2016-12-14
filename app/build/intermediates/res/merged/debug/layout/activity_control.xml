@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/brushed"
+    android:id="@+id/asd">
+
+
+    <unit.thr_bar
+        android:id="@+id/thr_bar"
+        android:layout_width="50dp"
+        android:layout_height="74dp"
+        android:alpha="0.4"
+        android:background="@drawable/ic_status_battery"
+        android:layout_toRightOf="@+id/btn_stop"
+        android:layout_alignRight="@+id/radioButton_ins"
+        android:layout_alignEnd="@+id/radioButton_ins"
+        android:layout_alignTop="@+id/btn_yaw_d" />
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_alignRight="@+id/i_cble_c"
+        android:layout_alignEnd="@+id/i_cble_c"
+        android:layout_toEndOf="@+id/i_jiantou_high"
+        android:layout_alignLeft="@+id/i_pro_youmen"
+        android:layout_alignStart="@+id/i_pro_youmen"
+        android:layout_above="@+id/thr_bar"
+        android:layout_below="@+id/iv_sbc_c" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_pro_youmen"
+        android:clickable="false"
+        android:progress="0"
+        android:max="100"
+        android:secondaryProgress="100"
+        android:background="@android:color/holo_blue_light"
+        android:indeterminate="false"
+        android:layout_below="@+id/text_tv_gpsf_w"
+        android:layout_alignLeft="@+id/text_tv_gpsf_w"
+        android:layout_alignStart="@+id/text_tv_gpsf_w"
+        android:layout_toLeftOf="@+id/btn_suoding"
+        android:layout_toStartOf="@+id/btn_suoding" />
+
+    <Button
+        android:id="@+id/btn_yaw_d"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="起飞"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/btn_suoding"
+        android:layout_alignTop="@+id/btn_jiesuo"
+        android:layout_toLeftOf="@+id/radioButton_ins"
+        android:layout_toStartOf="@+id/radioButton_ins" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="@string/btn_stop"
+        android:textColor="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_yaw_d"
+        android:layout_alignRight="@+id/radioButton_ins"
+        android:layout_alignEnd="@+id/radioButton_ins" />
+
+    <Button
+        android:id="@+id/btn_yaw_a"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="飞控复位"
+        android:textColor="@color/chartreuse"
+        android:layout_below="@+id/btn_yaw_d"
+        android:layout_alignLeft="@+id/b_pid_c"
+        android:layout_alignStart="@+id/b_pid_c" />
+
+    <TextView
+        android:id="@+id/text_col_thr"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="1500"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitesmoke"
+        android:layout_centerInParent="false"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/btn_suoding"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="飞控锁定"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_jiesuo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="飞控解锁"
+        android:textColor="@color/red"
+        android:layout_above="@+id/btn_suoding"
+        android:layout_toLeftOf="@+id/btn_yaw_d"
+        android:layout_toStartOf="@+id/btn_yaw_d" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="飞控电量:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/text_val_votage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="5"
+        android:text="bf"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView17"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="gaodu"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前经度："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/text_tv_gpsf_j"
+        android:layout_alignRight="@+id/text_val_yaw"
+        android:layout_alignEnd="@+id/text_val_yaw" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前纬度："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/text_tv_gpsf_w"
+        android:layout_alignLeft="@+id/text_tv_gpsf_j"
+        android:layout_alignStart="@+id/text_tv_gpsf_j" />
+
+    <TextView
+        android:id="@+id/text_tv_gpsf_j"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jindu"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/textView16"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/text_tv_gpsf_w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="weidu"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/text_col_thr"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS地图"
+        android:id="@+id/text_val_pitg"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:layout_below="@+id/im_lock_c"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手柄电量:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/text_val_votage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="5"
+        android:text="bs"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/text_val_votage1"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="飞控设置"
+        android:id="@+id/b_set_c"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:layout_below="@+id/b_pid_c"
+        android:layout_alignLeft="@+id/text_val_pitg"
+        android:layout_alignStart="@+id/text_val_pitg" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="传感器"
+        android:id="@+id/b_sensor_c"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:layout_below="@+id/text_val_pitg"
+        android:layout_alignLeft="@+id/text_val_pitg"
+        android:layout_alignStart="@+id/text_val_pitg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PID设置"
+        android:id="@+id/b_pid_c"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:layout_below="@+id/b_sensor_c"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/b_set_c"
+        android:layout_alignStart="@+id/b_set_c" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:background="@drawable/climb"
+        android:layout_alignBottom="@+id/textView1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_lock_c"
+        android:background="@android:drawable/ic_media_play"
+        android:textColor="@color/white"
+        android:adjustViewBounds="false"
+        android:layout_alignTop="@+id/iv_sbc_c"
+        android:layout_toLeftOf="@+id/iv_sbc_c"
+        android:layout_toStartOf="@+id/iv_sbc_c" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_sbc_c"
+        android:focusableInTouchMode="true"
+        android:cropToPadding="true"
+        android:background="@drawable/ic_control"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/i_cble_c"
+        android:layout_toStartOf="@+id/i_cble_c" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_back_c"
+        android:background="@android:drawable/ic_notification_clear_all"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS模式"
+        android:id="@+id/radioButton_gps"
+        android:checked="false"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/radioButton_ins"
+        android:layout_alignRight="@+id/radioButton_ins"
+        android:layout_alignEnd="@+id/radioButton_ins"
+        android:clickable="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定高模式"
+        android:id="@+id/radioButton_high"
+        android:checked="false"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/radioButton_gps"
+        android:layout_alignLeft="@+id/radioButton_gps"
+        android:layout_alignStart="@+id/radioButton_gps"
+        android:clickable="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="惯导模式"
+        android:id="@+id/radioButton_ins"
+        android:checked="false"
+        android:textColor="@android:color/black"
+        android:clickable="false"
+        android:layout_above="@+id/text_val_yaw"
+        android:layout_alignRight="@+id/iv_sbc_c"
+        android:layout_alignEnd="@+id/iv_sbc_c" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_cble_c"
+        android:background="@android:drawable/ic_menu_search"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/text_val_pitg"
+        android:layout_toStartOf="@+id/text_val_pitg" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="锁尾模式"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/radioButton_high"
+        android:layout_alignLeft="@+id/radioButton_high"
+        android:layout_alignStart="@+id/radioButton_high"
+        android:checked="false"
+        android:textColor="@android:color/black"
+        android:clickable="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帮助"
+        android:id="@+id/button"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/i_pro_youmen"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btn_yaw_a"
+        android:layout_alignStart="@+id/btn_yaw_a" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_impitrol_c"
+        android:background="@drawable/ati1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/b_sensor_c" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/ati3"
+        android:adjustViewBounds="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/i_impitrol_c" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_imyaw_c"
+        android:background="@drawable/hdg1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:background="@drawable/hdg2"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="俯仰:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/im_lock_c"
+        android:layout_toRightOf="@+id/i_impitrol_c"
+        android:layout_toEndOf="@+id/i_impitrol_c" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="横滚:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/i_impitrol_c" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="航向:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/i_impitrol_c" />
+
+    <TextView
+        android:id="@+id/text_val_pit"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="pit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/textView3"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/text_val_rol"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="rol"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignRight="@+id/text_val_pit"
+        android:layout_alignEnd="@+id/text_val_pit" />
+
+    <TextView
+        android:id="@+id/text_val_yaw"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="yaw"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/text_val_rol"
+        android:layout_toRightOf="@+id/textView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:background="@drawable/hand1"
+        android:layout_below="@+id/btn_stop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高度："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/TextView"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="油门:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:layout_centerInParent="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/i_pro_youmen"
+        android:layout_alignStart="@+id/i_pro_youmen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="飞机参数"
+        android:id="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/i_impitrol_c"
+        android:layout_toEndOf="@+id/i_impitrol_c"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="控制参数"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/text_val_votage2"
+        android:layout_toEndOf="@+id/text_val_votage2"
+        android:textColor="@color/gold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="pitc"
+        android:id="@+id/text_col_pit"
+        android:layout_alignTop="@+id/text_val_pit"
+        android:layout_alignLeft="@+id/text_col_yaw"
+        android:layout_alignStart="@+id/text_col_yaw"
+        android:textColor="@color/gold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="rolc"
+        android:id="@+id/text_col_rol"
+        android:layout_below="@+id/text_col_pit"
+        android:layout_alignLeft="@+id/text_col_pit"
+        android:layout_alignStart="@+id/text_col_pit"
+        android:textColor="@color/gold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="yawc"
+        android:id="@+id/text_col_yaw"
+        android:layout_below="@+id/text_col_rol"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:textColor="@color/gold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_jiantou_high"
+        android:background="@drawable/hand1"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:layout_above="@+id/b_set_c"
+        android:layout_alignTop="@+id/b_pid_c" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_no1"
+        android:background="@drawable/ic_action_compass_blue"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:background="@drawable/ic_action_plane"
+        android:layout_toLeftOf="@+id/b_back_c"
+        android:layout_toStartOf="@+id/b_back_c"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/b_back_c" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:background="@drawable/ic_land_active"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/i_cble_c"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_toLeftOf="@+id/imageView7"
+        android:layout_toStartOf="@+id/imageView7" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_seekBar_rendery"
+        android:max="100"
+        android:progress="50"
+        android:indeterminate="false"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_toRightOf="@+id/btn_stop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_seekBar_renderx"
+        android:max="100"
+        android:progress="0"
+        android:indeterminate="false"
+        android:layout_below="@+id/text_val_votage1"
+        android:layout_toRightOf="@+id/radioButton_gps"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout><!-- From: file:/F:/Quarotor/Source/UP_con/ANO_RC_v11/app/src/main/res/layout/activity_control.xml -->

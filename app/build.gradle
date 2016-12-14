@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.ano_rc.ano_rc_v1"
+        minSdkVersion 14
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('src/main/assets/lib/BaiduLBS_Android.jar')
+    compile files('src/main/assets/lib/android_api_1.1_forsdk.jar')
+    compile files('src/main/assets/lib/galaxy_mini.jar')
+    compile files('src/main/assets/lib/achartengine-1.0.0.jar')
+}
